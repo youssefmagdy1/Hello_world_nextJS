@@ -36,7 +36,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/your-repo-name:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/hello_wolrd_nextjs:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
